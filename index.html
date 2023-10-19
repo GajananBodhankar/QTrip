@@ -1,45 +1,236 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>QTrip</title>
-  <link rel="stylesheet" href="css/styles.css" />
-
-  <!-- TODO: MODULE_LAYOUT -->
-  <!-- 1. Create a <link> to the first stylesheet needed for Bootstrap -->
-
-</head>
-
-<body>
-
-  <!-- TODO: MODULE_LAYOUT -->
-  <!-- 1. Use appropriate css classes on nav element. -->
-  <!-- 2. Add child elements as required. -->
-
-   <nav></nav> 
-
-
-  <!-- TODO: MODULE_LAYOUT -->
-  <!-- 1. Use appropriate css classes on the hero image container element. -->
-  <!-- 2. Add child elements as required. -->
-
-   <div class="hero-image d-flex"></div> 
-
-
-  <div class="container">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>QTrip</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
     <!-- TODO: MODULE_LAYOUT -->
-    <!-- 1. Create the grid like layout as required. -->
-  </div>
+    <!-- 1. Create a <link> to the first stylesheet needed for Bootstrap -->
+    <style>
+      @media screen and (min-width: 991px) {
+        .under:hover {
+          text-decoration: underline;
+        }
+      }
+      .under {
+        margin-right: 2rem;
+      }
+      p {
+        margin: 0;
+      }
+      .cardTextTwo {
+        text-align: center;
+        /* margin-top: 115%; */
+        /* background-color: red; */
+        top: 77%;
+      }
+      .cardTextOne {
+        text-align: center;
+        /* margin-top: 100%; */
+        top: 77%;
 
-  <footer>
-    <div class="container">© QTrip 2020</div>
-  </footer>
+        /* background-color: red; */
+      }
+    </style>
+  </head>
 
-  <!-- TODO: MODULE_LAYOUT -->
-  <!-- Add scripts needed for bootstrap to work -->
-  
-</body>
+  <body>
+    <!-- TODO: MODULE_LAYOUT -->
+    <!-- 1. Use appropriate css classes on nav element. -->
+    <!-- 2. Add child elements as required. -->
 
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="navbar-brand">
+        <h5>QTrip</h5>
+      </div>
+      <button
+        type="button"
+        class="navbar-toggler"
+        data-toggle="collapse"
+        data-target="#navbarNav"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a href="#" class="nav-link text-dark under">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link text-dark under">Explore</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- TODO: MODULE_LAYOUT -->
+    <!-- 1. Use appropriate css classes on the hero image container element. -->
+    <!-- 2. Add child elements as required. -->
+
+    <div
+      class="hero-image d-flex text-light justify-content-center align-items-center flex-column"
+    >
+      <p style="font-size: xx-large; margin-bottom: 0">Welcome to QTrip</p>
+      <p style="font-size: large; text-align: center; margin-bottom: 1rem">
+        Explore the world with fantastic places to venture around
+      </p>
+      <div class="input-group col-lg-4" style="width: 70%">
+        <input
+          type="text"
+          name="SearchBar"
+          placeholder="Search a city"
+          class="form-control"
+          onkeyup="check()"
+          id="textInput"
+        />
+      </div>
+    </div>
+
+    <div class="container">
+      <!-- TODO: MODULE_LAYOUT -->
+      <!-- 1. Create the grid like layout as required. -->
+      <div class="row justify-content-center">
+        <div
+          class="col-lg-2 col-md-3 col-xl-2 col-sm-6 d-flex align-items-stretch"
+        >
+          <div class="card my-3 adventure-card">
+            <img src="./assets/bengaluru.jpg" alt="" class="img-fluid h-100" />
+            <div
+              class="position-absolute text-light align-self-center cardTextOne"
+            >
+              BANGALURU
+              <p style="font-size: small" class="mb-2">180+ PLACES</p>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="col-lg-2 col-md-3 col-xl-2 col-sm-6 d-flex align-items-stretch"
+        >
+          <div class="card my-3 adventure-card">
+            <img src="./assets/kolkata.jpg" alt="" class="img-fluid h-100" />
+            <div
+              class="position-absolute text-light align-self-center cardTextOne"
+            >
+              KOLKATA
+              <p style="font-size: small" class="mb-2">180+ PLACES</p>
+            </div>
+          </div>
+        </div>
+        <div
+          class="col-lg-2 col-md-3 col-xl-2 col-sm-6 d-flex align-items-stretch"
+        >
+          <div class="card my-3 adventure-card">
+            <img src="./assets/goa.jpg" alt="" class="img-fluid h-100" />
+            <div
+              class="position-absolute text-light align-self-center cardTextOne"
+            >
+              GOA
+              <p style="font-size: small" class="mb-2">180+ PLACES</p>
+            </div>
+          </div>
+        </div>
+        <div
+          class="col-lg-2 col-md-3 col-xl-2 col-sm-6 d-flex align-items-stretch"
+        >
+          <div class="card my-3 adventure-card">
+            <img src="./assets/mumbai.jpg" alt="" class="img-fluid h-100" />
+            <div
+              class="position-absolute text-light align-self-center cardTextOne"
+            >
+              MUMBAI
+              <p style="font-size: small" class="mb-2">180+ PLACES</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-lg-2 col-md-3 col-xl-2 col-sm-6 d-flex">
+          <div class="card my-3 adventure-card">
+            <img src="./assets/singapore.jpg" alt="" class="img-fluid h-100" />
+
+            <div
+              class="position-absolute text-light align-self-center cardTextTwo"
+            >
+              SINGAPORE
+              <p style="font-size: small" class="mb-2">180+ PLACES</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-3 col-xl-2 col-sm-6 d-flex">
+          <div class="card my-3 adventure-card">
+            <img src="./assets/dubai.jpg" alt="" class="img-fluid h-100" />
+
+            <div
+              class="position-absolute text-light align-self-center cardTextTwo"
+            >
+              DUBAI
+              <p style="font-size: small" class="mb-2">180+ PLACES</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-3 col-xl-2 col-sm-6 d-flex">
+          <div class="card my-3 adventure-card" style="object-fit: fill">
+            <img src="./assets/malaysia.jpg" alt="" class="img-fluid h-100" />
+
+            <div
+              class="position-absolute text-light align-self-center cardTextTwo"
+            >
+              MALAYSIA
+              <p style="font-size: small" class="mb-2">180+ PLACES</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-3 col-xl-2 col-sm-6 d-flex">
+          <div class="card my-3 adventure-card">
+            <img src="./assets/paris.jpg" alt="" class="img-fluid h-100" />
+
+            <div
+              class="position-absolute text-light align-self-center cardTextTwo"
+            >
+              PARIS
+              <p style="font-size: small" class="mb-2">180+ PLACES</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="container">© QTrip 2020</div>
+    </footer>
+
+    <!-- TODO: MODULE_LAYOUT -->
+    <!-- Add scripts needed for bootstrap to work -->
+    <script>
+      function check() {
+        let element = document.getElementsByClassName(
+          "position-absolute text-light align-self-center"
+        );
+        let searchText = document.getElementById("textInput").value;
+        for (let i = 0; i < element.length; i++) {
+          let item = element[i].innerText.split(/\n\s/)[0];
+          if (
+            item.startsWith(searchText.toUpperCase()) ||
+            item.includes(searchText.toUpperCase())
+          ) {
+            document.getElementsByClassName("card my-3 adventure-card")[
+              i
+            ].style.display = "block";
+          } else {
+            document.getElementsByClassName("card my-3 adventure-card")[
+              i
+            ].style.display = "none";
+          }
+        }
+      }
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </body>
 </html>

@@ -23,18 +23,34 @@
       p {
         margin: 0;
       }
-      .cardTextTwo {
-        text-align: center;
-        /* margin-top: 115%; */
-        /* background-color: red; */
-        top: 77%;
+      .tiles {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-end;
+        border-radius: 8px;
+        overflow: hidden;
+        margin-top: 20px;
+        margin-bottom: 20px;
       }
-      .cardTextOne {
+      .tiles img {
+        transition: all 0.2s;
+        z-index: 1;
+      }
+      .tiles img:hover {
+        filter: brightness(50%);
+        transform: scale(1.1);
+      }
+      .tile-text {
+        z-index: 1;
+        position: absolute;
+        color: white;
         text-align: center;
-        /* margin-top: 100%; */
-        top: 77%;
-
-        /* background-color: red; */
+      }
+      .tiles-hide {
+        display: none;
       }
     </style>
   </head>
@@ -96,104 +112,118 @@
       <!-- 1. Create the grid like layout as required. -->
       <div class="row justify-content-center">
         <div
-          class="col-lg-2 col-md-3 col-xl-2 col-sm-6 d-flex align-items-stretch"
+          class="col-lg-2 col-md-3 col-xl-2 col-sm-6 d-flex align-items-stretch my-2"
         >
-          <div class="card my-3 adventure-card">
-            <img src="./assets/bengaluru.jpg" alt="" class="img-fluid h-100" />
-            <div
-              class="position-absolute text-light align-self-center cardTextOne"
-            >
-              BANGALURU
+          <div
+            class="tiles"
+            style="
+              height: 100%;
+              width: 100%;
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              justify-content: flex-end;
+              border-radius: 8px;
+              overflow: hidden;
+              margin-top: 20px;
+              margin-bottom: 20px;
+            "
+          >
+            <img
+              src="./assets/bengaluru.jpg"
+              alt=""
+              style="width: 100%; height: 100%"
+            />
+            <div class="tile-text">
+              <h5>BANGALURU</h5>
               <p style="font-size: small" class="mb-2">180+ PLACES</p>
             </div>
           </div>
         </div>
 
         <div
-          class="col-lg-2 col-md-3 col-xl-2 col-sm-6 d-flex align-items-stretch"
+          class="col-lg-2 col-md-3 col-xl-2 col-sm-6 d-flex align-items-stretch my-2"
         >
-          <div class="card my-3 adventure-card">
-            <img src="./assets/kolkata.jpg" alt="" class="img-fluid h-100" />
-            <div
-              class="position-absolute text-light align-self-center cardTextOne"
-            >
-              KOLKATA
+          <div
+            class="tiles"
+            style="
+              height: 100%;
+              width: 100%;
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              justify-content: flex-end;
+              border-radius: 8px;
+              overflow: hidden;
+              margin-top: 20px;
+              margin-bottom: 20px;
+            "
+          >
+            <img
+              src="./assets/mumbai.jpg"
+              alt=""
+              style="width: 100%; height: 100%"
+            />
+            <div class="tile-text">
+              <h5>KOLKATA</h5>
               <p style="font-size: small" class="mb-2">180+ PLACES</p>
             </div>
           </div>
         </div>
         <div
-          class="col-lg-2 col-md-3 col-xl-2 col-sm-6 d-flex align-items-stretch"
+          class="col-lg-2 col-md-3 col-xl-2 col-sm-6 d-flex align-items-stretch my-2"
         >
-          <div class="card my-3 adventure-card">
-            <img src="./assets/goa.jpg" alt="" class="img-fluid h-100" />
-            <div
-              class="position-absolute text-light align-self-center cardTextOne"
-            >
-              GOA
+          <div
+            class="tiles"
+            style="
+              height: 100%;
+              width: 100%;
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              justify-content: flex-end;
+              border-radius: 8px;
+              overflow: hidden;
+              margin-top: 20px;
+              margin-bottom: 20px;
+            "
+          >
+            <img
+              src="./assets/mumbai.jpg"
+              alt=""
+              style="width: 100%; height: 100%"
+            />
+            <div class="tile-text">
+              <h5>GOA</h5>
               <p style="font-size: small" class="mb-2">180+ PLACES</p>
             </div>
           </div>
         </div>
         <div
-          class="col-lg-2 col-md-3 col-xl-2 col-sm-6 d-flex align-items-stretch"
+          class="col-lg-2 col-md-3 col-xl-2 col-sm-6 d-flex align-items-stretch my-2"
         >
-          <div class="card my-3 adventure-card">
-            <img src="./assets/mumbai.jpg" alt="" class="img-fluid h-100" />
-            <div
-              class="position-absolute text-light align-self-center cardTextOne"
-            >
-              MUMBAI
-              <p style="font-size: small" class="mb-2">180+ PLACES</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="row justify-content-center">
-        <div class="col-lg-2 col-md-3 col-xl-2 col-sm-6 d-flex">
-          <div class="card my-3 adventure-card">
-            <img src="./assets/singapore.jpg" alt="" class="img-fluid h-100" />
-
-            <div
-              class="position-absolute text-light align-self-center cardTextTwo"
-            >
-              SINGAPORE
-              <p style="font-size: small" class="mb-2">180+ PLACES</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-2 col-md-3 col-xl-2 col-sm-6 d-flex">
-          <div class="card my-3 adventure-card">
-            <img src="./assets/dubai.jpg" alt="" class="img-fluid h-100" />
-
-            <div
-              class="position-absolute text-light align-self-center cardTextTwo"
-            >
-              DUBAI
-              <p style="font-size: small" class="mb-2">180+ PLACES</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-2 col-md-3 col-xl-2 col-sm-6 d-flex">
-          <div class="card my-3 adventure-card" style="object-fit: fill">
-            <img src="./assets/malaysia.jpg" alt="" class="img-fluid h-100" />
-
-            <div
-              class="position-absolute text-light align-self-center cardTextTwo"
-            >
-              MALAYSIA
-              <p style="font-size: small" class="mb-2">180+ PLACES</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-2 col-md-3 col-xl-2 col-sm-6 d-flex">
-          <div class="card my-3 adventure-card">
-            <img src="./assets/paris.jpg" alt="" class="img-fluid h-100" />
-
-            <div
-              class="position-absolute text-light align-self-center cardTextTwo"
-            >
-              PARIS
+          <div
+            class="tiles"
+            style="
+              height: 100%;
+              width: 100%;
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              justify-content: flex-end;
+              border-radius: 8px;
+              overflow: hidden;
+              margin-top: 20px;
+              margin-bottom: 20px;
+            "
+          >
+            <img
+              src="./assets/bengaluru.jpg"
+              alt=""
+              style="width: 100%; height: 100%"
+            />
+            <div class="tile-text">
+              <h5>MUMBAI</h5>
               <p style="font-size: small" class="mb-2">180+ PLACES</p>
             </div>
           </div>
@@ -209,23 +239,18 @@
     <!-- Add scripts needed for bootstrap to work -->
     <script>
       function check() {
-        let element = document.getElementsByClassName(
-          "position-absolute text-light align-self-center"
-        );
+        let element = document.getElementsByClassName("tile-text");
         let searchText = document.getElementById("textInput").value;
         for (let i = 0; i < element.length; i++) {
           let item = element[i].innerText.split(/\n\s/)[0];
+
           if (
             item.startsWith(searchText.toUpperCase()) ||
             item.includes(searchText.toUpperCase())
           ) {
-            document.getElementsByClassName("card my-3 adventure-card")[
-              i
-            ].style.display = "block";
+            document.getElementsByClassName("tiles")[i].style.display = "flex";
           } else {
-            document.getElementsByClassName("card my-3 adventure-card")[
-              i
-            ].style.display = "none";
+            document.getElementsByClassName("tiles")[i].style.display = "none";
           }
         }
       }

@@ -23,36 +23,6 @@
       p {
         margin: 0;
       }
-      .tiles {
-        height: 100%;
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: flex-end;
-        border-radius: 8px;
-        overflow: hidden;
-        margin-top: 20px;
-        margin-bottom: 20px;
-      }
-      .tiles img {
-        transition: all 0.2s;
-        z-index: 1;
-      }
-      .tiles img:hover {
-        filter: brightness(50%);
-        transform: scale(1.1);
-        cursor: pointer;
-      }
-      .tile-text {
-        z-index: 1;
-        position: absolute;
-        color: white;
-        text-align: center;
-      }
-      .tiles-hide {
-        display: none;
-      }
     </style>
   </head>
 
@@ -76,10 +46,14 @@
       <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a href="#" class="nav-link text-dark under">Home</a>
+            <a href="./index.html" class="nav-link text-dark under">Home</a>
           </li>
           <li class="nav-item">
-            <a href="#" class="nav-link text-dark under">Explore</a>
+            <a
+              href="./pages/adventures/index.html"
+              class="nav-link text-dark under"
+              >Explore</a
+            >
           </li>
         </ul>
       </div>
@@ -115,243 +89,225 @@
         <div
           class="col-lg-2 col-md-3 col-xl-2 col-sm-6 d-flex align-items-stretch my-2"
         >
-          <div
-            class="tiles"
-            style="
-              height: 100%;
-              width: 100%;
-              display: flex;
-              flex-direction: column;
-              align-items: center;
-              justify-content: flex-end;
-              border-radius: 8px;
-              overflow: hidden;
-              margin-top: 20px;
-              margin-bottom: 20px;
-            "
-          >
-            <img
-              src="./assets/bengaluru.jpg"
-              alt=""
-              style="width: 100%; height: 100%"
-            />
-            <div class="tile-text">
-              <h5>BANGALURU</h5>
-              <p style="font-size: small" class="mb-2">180+ PLACES</p>
+          <a href="./pages/adventures/index.html">
+            <div
+              class="tile"
+              style="
+                height: 100%;
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: flex-end;
+                border-radius: 8px;
+                overflow: hidden;
+                margin-top: 20px;
+                margin-bottom: 20px;
+              "
+            >
+              <img src="assets/bengaluru.jpg" />
+              <div class="tile-text text-center">
+                <h5>Bengaluru</h5>
+                <p>100+ places</p>
+              </div>
             </div>
-          </div>
-        </div>
-
-        <div
-          class="col-lg-2 col-md-3 col-xl-2 col-sm-6 d-flex align-items-stretch my-2"
-        >
-          <div
-            class="tiles"
-            style="
-              height: 100%;
-              width: 100%;
-              display: flex;
-              flex-direction: column;
-              align-items: center;
-              justify-content: flex-end;
-              border-radius: 8px;
-              overflow: hidden;
-              margin-top: 20px;
-              margin-bottom: 20px;
-            "
-          >
-            <img
-              src="./assets/kolkata.jpg"
-              alt=""
-              style="width: 100%; height: 100%"
-            />
-            <div class="tile-text">
-              <h5>KOLKATA</h5>
-              <p style="font-size: small" class="mb-2">180+ PLACES</p>
-            </div>
-          </div>
+          </a>
         </div>
         <div
           class="col-lg-2 col-md-3 col-xl-2 col-sm-6 d-flex align-items-stretch my-2"
         >
-          <div
-            class="tiles"
-            style="
-              height: 100%;
-              width: 100%;
-              display: flex;
-              flex-direction: column;
-              align-items: center;
-              justify-content: flex-end;
-              border-radius: 8px;
-              overflow: hidden;
-              margin-top: 20px;
-              margin-bottom: 20px;
-            "
-          >
-            <img
-              src="./assets/goa.jpg"
-              alt=""
-              style="width: 100%; height: 100%"
-            />
-            <div class="tile-text">
-              <h5>GOA</h5>
-              <p style="font-size: small" class="mb-2">180+ PLACES</p>
+          <a href="./pages/adventures/index.html">
+            <div
+              class="tile"
+              style="
+                height: 100%;
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: flex-end;
+                border-radius: 8px;
+                overflow: hidden;
+                margin-top: 20px;
+                margin-bottom: 20px;
+              "
+            >
+              <img src="assets/kolkata.jpg" />
+              <div class="tile-text text-center">
+                <h5>Kolkata</h5>
+                <p>52+ places</p>
+              </div>
             </div>
-          </div>
+          </a>
         </div>
         <div
           class="col-lg-2 col-md-3 col-xl-2 col-sm-6 d-flex align-items-stretch my-2"
         >
-          <div
-            class="tiles"
-            style="
-              height: 100%;
-              width: 100%;
-              display: flex;
-              flex-direction: column;
-              align-items: center;
-              justify-content: flex-end;
-              border-radius: 8px;
-              overflow: hidden;
-              margin-top: 20px;
-              margin-bottom: 20px;
-            "
-          >
-            <img
-              src="./assets/mumbai.jpg"
-              alt=""
-              style="width: 100%; height: 100%"
-            />
-            <div class="tile-text">
-              <h5>MUMBAI</h5>
-              <p style="font-size: small" class="mb-2">180+ PLACES</p>
+          <a href="./pages/adventures/index.html">
+            <div
+              class="tile"
+              style="
+                height: 100%;
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: flex-end;
+                border-radius: 8px;
+                overflow: hidden;
+                margin-top: 20px;
+                margin-bottom: 20px;
+              "
+            >
+              <img src="assets/goa.jpg" />
+              <div class="tile-text text-center">
+                <h5>GOA</h5>
+                <p>52+ places</p>
+              </div>
             </div>
-          </div>
+          </a>
+        </div>
+        <div
+          class="col-lg-2 col-md-3 col-xl-2 col-sm-6 d-flex align-items-stretch my-2"
+        >
+          <a href="./pages/adventures/index.html">
+            <div
+              class="tile"
+              style="
+                height: 100%;
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: flex-end;
+                border-radius: 8px;
+                overflow: hidden;
+                margin-top: 20px;
+                margin-bottom: 20px;
+              "
+            >
+              <img src="assets/mumbai.jpg" />
+              <div class="tile-text text-center">
+                <h5>MUMBAI</h5>
+                <p>52+ places</p>
+              </div>
+            </div>
+          </a>
         </div>
       </div>
       <div class="row justify-content-center">
         <div
           class="col-lg-2 col-md-3 col-xl-2 col-sm-6 d-flex align-items-stretch my-2"
         >
-          <div
-            class="tiles"
-            style="
-              height: 100%;
-              width: 100%;
-              display: flex;
-              flex-direction: column;
-              align-items: center;
-              justify-content: flex-end;
-              border-radius: 8px;
-              overflow: hidden;
-              margin-top: 20px;
-              margin-bottom: 20px;
-            "
-          >
-            <img
-              src="./assets/singapore.jpg"
-              alt=""
-              style="width: 100%; height: 100%"
-            />
-            <div class="tile-text">
-              <h5>SINGAPORE</h5>
-              <p style="font-size: small" class="mb-2">180+ PLACES</p>
+          <a href="./pages/adventures/index.html">
+            <div
+              class="tile"
+              style="
+                height: 100%;
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: flex-end;
+                border-radius: 8px;
+                overflow: hidden;
+                margin-top: 20px;
+                margin-bottom: 20px;
+              "
+            >
+              <img src="assets/singapore.jpg" />
+              <div class="tile-text text-center">
+                <h5>SINGAPORE</h5>
+                <p>52+ places</p>
+              </div>
             </div>
-          </div>
-        </div>
-
-        <div
-          class="col-lg-2 col-md-3 col-xl-2 col-sm-6 d-flex align-items-stretch my-2"
-        >
-          <div
-            class="tiles"
-            style="
-              height: 100%;
-              width: 100%;
-              display: flex;
-              flex-direction: column;
-              align-items: center;
-              justify-content: flex-end;
-              border-radius: 8px;
-              overflow: hidden;
-              margin-top: 20px;
-              margin-bottom: 20px;
-            "
-          >
-            <img
-              src="./assets/dubai.jpg"
-              alt=""
-              style="width: 100%; height: 100%"
-            />
-            <div class="tile-text">
-              <h5>DUBAI</h5>
-              <p style="font-size: small" class="mb-2">180+ PLACES</p>
-            </div>
-          </div>
+          </a>
         </div>
         <div
           class="col-lg-2 col-md-3 col-xl-2 col-sm-6 d-flex align-items-stretch my-2"
         >
-          <div
-            class="tiles"
-            style="
-              height: 100%;
-              width: 100%;
-              display: flex;
-              flex-direction: column;
-              align-items: center;
-              justify-content: flex-end;
-              border-radius: 8px;
-              overflow: hidden;
-              margin-top: 20px;
-              margin-bottom: 20px;
-            "
-          >
-            <img
-              src="./assets/malaysia.jpg"
-              alt=""
-              style="width: 100%; height: 100%"
-            />
-            <div class="tile-text">
-              <h5>MALAYSIA</h5>
-              <p style="font-size: small" class="mb-2">180+ PLACES</p>
+          <a href="./pages/adventures/index.html">
+            <div
+              class="tile"
+              style="
+                height: 100%;
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: flex-end;
+                border-radius: 8px;
+                overflow: hidden;
+                margin-top: 20px;
+                margin-bottom: 20px;
+              "
+            >
+              <img src="assets/dubai.jpg" />
+              <div class="tile-text text-center">
+                <h5>dubai</h5>
+                <p>52+ places</p>
+              </div>
             </div>
-          </div>
+          </a>
         </div>
         <div
           class="col-lg-2 col-md-3 col-xl-2 col-sm-6 d-flex align-items-stretch my-2"
         >
-          <div
-            class="tiles"
-            style="
-              height: 100%;
-              width: 100%;
-              display: flex;
-              flex-direction: column;
-              align-items: center;
-              justify-content: flex-end;
-              border-radius: 8px;
-              overflow: hidden;
-              margin-top: 20px;
-              margin-bottom: 20px;
-            "
-          >
-            <img
-              src="./assets/paris.jpg"
-              alt=""
-              style="width: 100%; height: 100%"
-            />
-            <div class="tile-text">
-              <h5>PARIS</h5>
-              <p style="font-size: small" class="mb-2">180+ PLACES</p>
+          <a href="./pages/adventures/index.html">
+            <div
+              class="tile"
+              style="
+                height: 100%;
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: flex-end;
+                border-radius: 8px;
+                overflow: hidden;
+                margin-top: 20px;
+                margin-bottom: 20px;
+              "
+            >
+              <img src="assets/malaysia.jpg" />
+              <div class="tile-text text-center">
+                <h5>malaysia</h5>
+                <p>52+ places</p>
+              </div>
             </div>
-          </div>
+          </a>
+        </div>
+        <div
+          class="col-lg-2 col-md-3 col-xl-2 col-sm-6 d-flex align-items-stretch my-2"
+        >
+          <a href="./pages/adventures/index.html">
+            <div
+              class="tile"
+              style="
+                height: 100%;
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: flex-end;
+                border-radius: 8px;
+                overflow: hidden;
+                margin-top: 20px;
+                margin-bottom: 20px;
+              "
+            >
+              <img src="assets/paris.jpg" />
+              <div class="tile-text text-center">
+                <h5>paris</h5>
+                <p>52+ places</p>
+              </div>
+            </div>
+          </a>
         </div>
       </div>
     </div>
 
-    <footer>  
+    <footer>
       <div class="container">© QTrip 2020</div>
     </footer>
 
@@ -359,18 +315,17 @@
     <!-- Add scripts needed for bootstrap to work -->
     <script>
       function check() {
-        let element = document.getElementsByClassName("tile-text");
+        let element = document.getElementsByClassName("tile-text text-center");
         let searchText = document.getElementById("textInput").value;
         for (let i = 0; i < element.length; i++) {
           let item = element[i].innerText.split(/\n\s/)[0];
-
           if (
             item.startsWith(searchText.toUpperCase()) ||
             item.includes(searchText.toUpperCase())
           ) {
-            document.getElementsByClassName("tiles")[i].style.display = "flex";
+            document.getElementsByClassName("tile")[i].style.display = "flex";
           } else {
-            document.getElementsByClassName("tiles")[i].style.display = "none";
+            document.getElementsByClassName("tile")[i].style.display = "none";
           }
         }
       }

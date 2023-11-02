@@ -12,64 +12,54 @@
       crossorigin="anonymous"
     />
     <style>
-                  @media screen and (max-width: 991px) {
-                    .row {
-                      flex-direction: column;
-                      align-items: center;
-                      padding-left: 0.75rem;
-                      padding-right: 0.75rem;
-                    }
-                    #subImg {
-                      display: none;
-                    }
-                    #mainImg {
-                      width: 100%;
+      @media screen and (max-width: 991px) {
+        #subImg {
+          height: 0em !important;
+        }
 
-                    }
-                    #mainDivOne{
-                       width: 100%";
-                    }
-                    .sticky-container {
-                  border: 0.1px solid rgb(179, 179, 179);
-                margin:5px ;
-                }
-
-                  }
-                  @media screen and (min-width: 991px) {
-                    .row {
-                      flex-direction: row;
-                     justify-content: flex-start;
-                    }
-                    #mainImg {
-                      width: 60%;
-                      height: 31rem;
-                    }
-
-
-                    #mainDivOne{
-                      width: 75%;
-
-                    }
-                    #subImg{
-                    height: 31rem;
-
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: space-between;
-                  }
-
-                  .sticky-container {
-                  border: 0.1px solid rgb(179, 179, 179);
-                  position: fixed;
-            top: 78px; /* Distance from the top edge of the viewport */
-            right: 20px; /* Distance from the right edge of the viewport */
-            width: 400px; /* Set the width of the fixed element */
-      padding-top: 10px;
-              }
-                  }
-                  .ulist{
-                      padding-left: 3.5rem;
-                    }
+        .sticky-container {
+          border: 0.1px solid rgb(179, 179, 179);
+          margin: 5px 0px;
+          width: 100% !important;
+        }
+      }
+      @media screen and (min-width: 991px) {
+        .sticky-container {
+          border: 0.1px solid rgb(179, 179, 179);
+          position: fixed;
+          top: 75px;
+          right: 20px;
+          padding-top: 10px;
+        }
+      }
+      @media screen and (min-width: 1300px) and (max-width: 1399px) {
+        .sticky-container {
+          width: 21.5rem;
+        }
+      }
+      @media screen and (max-width: 1299px) {
+        .sticky-container {
+          width: 18rem;
+        }
+      }
+      @media screen and (max-width: 1099px) {
+        .sticky-container {
+          width: 14.5rem;
+        }
+      }
+      @media screen and (min-width: 1400px) {
+        .sticky-container {
+          width: 25rem;
+        }
+      }
+      .col-12 > .row:first-child {
+        border: 0.1px solid rgb(179, 179, 179);
+        padding-top: 1rem;
+        overflow: hidden;
+      }
+      .ulist {
+        padding-left: 3.5rem;
+      }
     </style>
   </head>
 
@@ -103,24 +93,17 @@
     </nav>
 
     <div class="container" style="display: flex">
-      <div class="content">
+      <div class="content" style="padding: 1em">
         <!-- TOOD: MODULE_ADVENTURE_DETAILS -->
         <!-- 1. Write the child elements as required. -->
         <!-- 2. Remember to use .adventure-card and its related classes. -->
         <div class="row">
-          <div
-            class="col-12 col-md-12 col-sm-12 col-lg-6 col-xl-6"
-            id="mainDivOne"
-          >
-            <div
-              class="row"
-              style="
-                border: 0.1px solid rgb(179, 179, 179);
-                padding-top: 1rem;
-                overflow: hidden;
-              "
-            >
-              <div class="col-6 col-md-12" id="mainImg">
+          <div class="col-12 col-md-12 col-sm-12 col-lg-9 col-xl-9">
+            <div class="row">
+              <div
+                class="col-12 col-md-12 col-lg-8 col-xl-8 col-sm-12"
+                style="height: 31rem"
+              >
                 <img
                   src="../../../assets/adventures/resort/resort1.jpg"
                   alt=""
@@ -128,7 +111,11 @@
                   width="100%"
                 />
               </div>
-              <div class="col-6" id="subImg" style="width: 40%">
+              <div
+                class="col-lg-4 d-flex justify-content-between flex-column"
+                id="subImg"
+                style="height: 31rem"
+              >
                 <img
                   src="../../../assets/adventures/resort/resort2.jpg"
                   alt=""
@@ -203,14 +190,12 @@
             </div>
           </div>
           <div
-            class="col-12 col-md-12 col-sm-12 col-lg-2 col-xl-2 sticky-container"
+            class="col-xs-12 col-md-12 col-sm-12 col-lg-2 col-xl-2 sticky-container"
           >
-            <!-- Content for the sticky sidebar goes here -->
             <h4>Sold Out!</h4>
             <hr />
             <p>
               This adventure is currently sold-out but here's lot more to
-
               <a href="../index.html" class="text-warning">explore</a>
             </p>
           </div>
@@ -226,6 +211,7 @@
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
       crossorigin="anonymous"
     ></script>
+    <script></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   </body>
